@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <style>
+    /* Reset CSS */
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Global Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #fff;
+      background-color: #121212;
+    }
+
+    /* Header */
+    header {
+      background-color: #001f3f;
+      color: #00bfff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #0074cc;
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+      font-size: 1.2em;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    /* Sections */
+    .content-section {
+      display: none;
+      padding: 50px 20px;
+    }
+
+    .content-section h2 {
+      color: #00bfff;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .content-section p {
+      font-size: 1.1em;
+      color: #ccc;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .menu {
+      border: 2px solid #00bfff;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      background-color: #001f3f;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Futuristic Styles */
+    /* Futuristic Styles */
+    .futuristic-container {
+         display: flex;
+        justify-content: space-between;
+    }
+
+
+    /* ... Autres styles ... */
+/* ... Autres styles ... */
+.futuristic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #001f3f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: calc(30% - 40px); /* 3 elements in a row with some margin */
+}
+
+.futuristic2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #001f3f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: calc(20% - 40px); /* 3 elements in a row with some margin */
+}
+
+.futuristic3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #001f3f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: calc(45% - 40px); /* 3 elements in a row with some margin */
+  text-align: left;
+}
+
+.futuristic-container-menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.futuristic4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #00bfff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 50px 0 0; /* Ajout de la marge de 10px, sans marge en bas et à gauche */
+    background-color: #001f3f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: calc(15% - 10px); /* 3 éléments en ligne avec un espace de 10px */
+    text-align: left;
+}
+
+/* Ajouter une règle pour aligner à gauche lorsque plusieurs éléments sont présents */
+@media (max-width: 768px) {
+    .futuristic4 {
+        max-width: calc(100% - 10px); /* 100% de la largeur avec un espace de 10px */
+        margin: 20px 0 0 0; /* Aucune marge en haut, à droite, et à gauche */
+    }
+}
+
+
+/* Ajouter une règle pour aligner à gauche lorsque plusieurs éléments sont présents */
+
+
+.image img {
+  max-width: 100%; /* Make sure the image does not exceed the container width */
+}
+
+.content h3 {
+  margin-top: 10px;
+  color: #fff; /* Text color */
+  text-align: center;
+}
+
+/* Style de lien pour la div complète */
+.futuristic a {
+  display: contents; /* Rend le lien occuper tout l'espace de la div */
+}
+
+
+/* ... Autres styles ... */
+
+
+/* ... Autres styles ... */
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .futuristic-container {
+        flex-wrap: wrap;
+    }
+
+    .futuristic4 {
+        max-width: calc(100% - 40px); /* 100% de la largeur avec un peu de marge */
+        margin-right: 0; /* Supprimer la marge à droite */
+    }
+}
+
+
+
+
+    /* Footer */
+    footer {
+      background-color: #001f3f;
+      color: #00bfff;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* JavaScript Styles */
+    script {
+      display: none;
+    }
+
+    .name{
+      margin-bottom: 100px;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FuturBurger</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Acceuil</a>
+    <a href="#features">Nos Menu</a>
+    <a href="#contact">Enfants</a>
+  </nav>
+
+  <section id="home" class="content-section">
+    <h2>Chaud bouillant !</h2>
+    <p>Découvrez les actualités FuturBurger</p>
+    <div class="futuristic-container">
+        <div class="futuristic">
+            <a href="https://votre-lien.com">
+              <div class="image">
+                <img src="https://burgerkingfrance.twic.pics/img/animations/33d13126-6410-4d80-832b-9854c6021e20_?twic=v1/contain=600x375.8" alt="Augmented Reality Image">
+              </div>
+              <div class="content">
+                <h3>Ca croustille !</h3>
+              </div>
+            </a>
+        </div>
+        <div class="futuristic">
+            <a href="https://votre-lien.com">
+              <div class="image">
+                <img src="https://burgerkingfrance.twic.pics/img/animations/0023ce7b-298f-4336-a415-c64fdf641a6c_?twic=v1/contain=600x375" alt="Augmented Reality Image">
+              </div>
+              <div class="content">
+                <h3>Ca glisse tout seul !</h3>
+              </div>
+            </a>
+        </div>
+        <div class="futuristic">
+            <a href="https://votre-lien.com">
+              <div class="image">
+                <img src="https://burgerkingfrance.twic.pics/img/animations/d7ccdfb0-6d92-4740-a25d-85cc4cbdb278_?twic=v1/contain=600x375" alt="Augmented Reality Image">
+              </div>
+              <div class="content">
+                <h3>A vous le jouet !</h3>
+              </div>
+            </a>
+        </div>
+    </div>
+    
+    <h1 class='name'></h1>
+    <h2>Une petite ou une grosse faim ? 🍔</h2>
+    
+    <div class="futuristic-container">
+        <div class="futuristic2">
+            <a href="https://votre-lien.com">
+                <div class="content">
+                    <h3>Petit Wrap Chicken BBQ Bacon</h3>
+                  </div>
+              <div class="image">
+                <img src="https://burgerkingfrance.twic.pics/img/products/3/d0/3d0e6348-a712-4d8f-92ce-a51e9ec36edd_?twic=v1/contain=350x350" alt="Augmented Reality Image">
+              </div>
+            </a>
+        </div>
+        <div class="futuristic2">
+            <a href="https://votre-lien.com">
+                <div class="content">
+                    <h3>KING FUSION M&M'S®</h3>
+                  </div>
+              <div class="image">
+                <img src="https://burgerkingfrance.twic.pics/img/products/9/9b/99b627d2-6d40-4508-8620-bcbe406b741a_?twic=v1/contain=350x350" alt="Augmented Reality Image">
+              </div>
+            </a>
+        </div>
+        <div class="futuristic2">
+            <a href="https://votre-lien.com">
+                <div class="content">
+                    <h3>Veggie Chicken Louisiane Steakhouse</h3>
+                  </div>
+              <div class="image">
+                <img src="https://burgerkingfrance.twic.pics/img/products/7/5a/75a852b5-32f1-4c0b-b7e9-4182ef150f51_?twic=v1/contain=350x350" alt="Augmented Reality Image">
+              </div>
+            </a>
+        </div>
+        <div class="futuristic2">
+            <a href="https://votre-lien.com">
+                <div class="content">
+                    <h3>Double Cheese Bacon XXL</h3>
+                  </div>
+              <div class="image">
+                <img src="https://burgerkingfrance.twic.pics/img/menu/116fb51d-bb88-4bb3-a188-8591db1de60a_?twic=v1/contain=350x350" alt="Augmented Reality Image">
+              </div>
+            </a>
+        </div>
+    </div>
+  </section>
+
+  <section id="features" class="content-section">
+    <h2>Key Features</h2>
+    <div class="menu">
+      <h3>Augmented Reality</h3>
+      <p>Immerse yourself in a world where the virtual and real coexist seamlessly.</p>
+    </div>
+    <div class="menu">
+      <h3>Artificial Intelligence</h3>
+      <p>AI-driven services that anticipate your needs and enhance your experience.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="content-section">
+    <h2>Chez nous, les enfants ont le choix</h2>
+    <div class="futuristic-container">
+        <div class="futuristic3">
+              <div class="image">
+                <img src="https://burgerkingfrance.twic.pics/custom-pages/famille/homepage/kingJunior9.png" alt="Augmented Reality Image">
+              </div>
+              <a href="#kingjunior">
+                <div class="content">
+                  <h3>C'est parti !</h3>
+                </div>    
+            </a>    
+        </div>
+        <div class="futuristic3">
+              <div class="image">
+                <img src="https://burgerkingfrance.twic.pics/custom-pages/famille/homepage/kingJuniorPlus10.png" alt="Augmented Reality Image">
+              </div>
+            <a href="#kingjuniorplus">
+              <div class="content">
+                <h3>Toujours plus !</h3>
+              </div>
+            </a>
+        </div>
+    </div>
+    
+  </section>
+
+  <section id="kingjunior" class="content-section">
+    <h2>Berger Junior</h2>
+    <h3>Les Burgers</h3>
+    <div class="futuristic-container-menu">
+    <div class="futuristic4">
+        <div class="image">
+          <img src="https://burgerkingfrance.twic.pics/img/products/7/55/755274a6-4209-4d39-aca7-45c966e65065_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+        </div>   
+      </a>    
+     </div>
+     <div class="futuristic4">
+         <div class="image">
+           <img src="https://burgerkingfrance.twic.pics/img/products/4/a7/4a720c3f-8afe-4559-a248-f79dfec65367_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+         </div>    
+       </a>    
+      </div>
+     <div class="futuristic4">
+         <div class="image">
+           <img src="https://burgerkingfrance.twic.pics/img/products/9/25/925acb07-1555-40b4-b838-034607db10f6_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+         </div>    
+       </a>    
+      </div>
+     <div class="futuristic4">
+         <div class="image">
+           <img src="https://burgerkingfrance.twic.pics/img/products/4/b5/4b5bb682-4833-4fd6-a5b6-61eb43f11ffe_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+         </div>   
+       </a>    
+      </div>
+     <div class="futuristic4">
+         <div class="image">
+           <img src="https://burgerkingfrance.twic.pics/img/products/b/6a/b6a69b28-1538-4ced-a585-fbf892e7053c_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+         </div>  
+       </a>    
+      </div>
+    </div>
+    <h1 class='name'></h1>
+    <h3>Les accompagnements</h3>
+    <div class="futuristic-container-menu">
+    <div class="futuristic4">
+        <div class="image">
+          <img src="https://burgerkingfrance.twic.pics/img/products/f/83/f831d993-ad88-4bb7-98c6-d271dfb7dd50_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+        </div>   
+      </a>    
+     </div>
+     <div class="futuristic4">
+         <div class="image">
+           <img src="https://burgerkingfrance.twic.pics/img/products/5/99/599f3dcb-3d1c-47f8-ab78-c0ac202c9a2e_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+         </div>    
+       </a>    
+      </div>
+    </div>
+    <h1 class='name'></h1>
+    <h3>Les boissons</h3>
+    <div class="futuristic-container-menu">
+    <div class="futuristic4">
+        <div class="image">
+          <img src="https://burgerkingfrance.twic.pics/img/products/c/fa/cfab9ffa-8b06-4272-8805-d136e84a750b_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+        </div>   
+      </a>    
+     </div>
+     <div class="futuristic4">
+         <div class="image">
+           <img src="https://burgerkingfrance.twic.pics/img/products/8/8e/88e62700-4673-4a18-b5be-e81dd535a4f0_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+         </div>    
+       </a>    
+      </div>
+    <div class="futuristic4">
+        <div class="image">
+          <img src="https://burgerkingfrance.twic.pics/img/products/3/ab/3abcf1e2-4960-4e7e-9ac5-9ecf1d15228c_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+        </div>   
+      </a>    
+     </div>
+     <div class="futuristic4">
+         <div class="image">
+           <img src="https://burgerkingfrance.twic.pics/img/products/3/a9/3a90ff95-4f3a-4f7f-9250-3ac2da8103d8_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+         </div>    
+       </a>    
+      </div>
+      <div class="futuristic4">
+          <div class="image">
+            <img src="https://burgerkingfrance.twic.pics/img/products/0/ac/0ac817b2-a8a6-4319-873e-b7dccb762ef9_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+          </div>   
+        </a>    
+       </div>
+       <div class="futuristic4">
+           <div class="image">
+             <img src="https://burgerkingfrance.twic.pics/img/products/e/a4/ea4f290e-a73b-42bf-a4b9-29b6595c689c_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+           </div>    
+         </a>    
+        </div>
+    <div class="futuristic4">
+        <div class="image">
+          <img src="https://burgerkingfrance.twic.pics/img/products/5/0c/50c888a6-74f9-44cd-b14e-41ba94eeaf4d_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+        </div>   
+      </a>    
+     </div>
+     <div class="futuristic4">
+         <div class="image">
+           <img src="https://burgerkingfrance.twic.pics/img/products/2/3f/23f6964d-fb2a-4082-b510-64e9d5206826_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+         </div>    
+       </a>    
+      </div>
+    </div>
+    <h1 class='name'></h1>
+    <h3>Les desserts</h3>
+    <div class="futuristic-container-menu">
+    <div class="futuristic4">
+        <div class="image">
+          <img src="https://burgerkingfrance.twic.pics/img/products/9/62/9625bdee-391e-4a3e-b9ae-d853b2482fa2_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+        </div>   
+      </a>    
+     </div>
+     <div class="futuristic4">
+         <div class="image">
+           <img src="https://burgerkingfrance.twic.pics/img/products/9/4a/94a9086e-e4a1-4824-833e-f125e52a7345_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+         </div>    
+       </a>    
+      </div>
+    <div class="futuristic4">
+        <div class="image">
+          <img src="https://burgerkingfrance.twic.pics/img/products/f/d0/fd0c446f-4c66-4a3b-879a-4b6f23d743bc_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+        </div>   
+      </a>    
+     </div>
+     <div class="futuristic4">
+         <div class="image">
+           <img src="https://burgerkingfrance.twic.pics/img/products/d/be/dbe25333-2777-4813-8fcd-026bb0f306d3_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+         </div>    
+       </a>    
+      </div>
+      <div class="futuristic4">
+          <div class="image">
+            <img src="https://burgerkingfrance.twic.pics/img/products/6/6c/66c464ae-2537-4da6-b4e4-b423ecf9b095_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+          </div>   
+        </a>    
+       </div>
+       <div class="futuristic4">
+           <div class="image">
+             <img src="https://burgerkingfrance.twic.pics/img/products/6/a8/6a8488e2-0bb5-449b-a8e8-0f8150cef291_?twic=v1/contain=150x150" alt="Augmented Reality Image">
+           </div>    
+         </a>    
+        </div>
+    </div>
+
+    <!-- Contenu de la section "King Junior" -->
+  </section>
+
+  <section id="kingjuniorplus" class="content-section">
+    <h2>Berger Junior</h2>
+
+  </section>
+  
+  
+  
+
+  <footer>
+    <p>&copy; 2023 FuturBurger Site.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const defaultSection = document.getElementById('home');
+      defaultSection.style.display = 'block';
+  
+      // Ajoutez le code pour gérer le clic sur le lien indépendant
+      const kingJuniorLink = document.querySelector('a[href="#kingjunior"]');
+      if (kingJuniorLink) {
+        kingJuniorLink.addEventListener('click', function (e) {
+          e.preventDefault();
+  
+          const targetId = this.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
+  
+          document.querySelectorAll('.content-section').forEach(section => {
+            section.style.display = 'none';
+          });
+  
+          targetSection.style.display = 'block';
+  
+          // Ajoutez le code pour faire défiler jusqu'à la section cible
+          window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth'
+          });
+        });
+      }
+  
+      // Ajoutez le code pour gérer le clic sur les liens de la navigation principale
+      document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+  
+          const targetId = this.getAttribute('href').substring(1);
+          const targetSection = document.getElementById(targetId);
+  
+          document.querySelectorAll('.content-section').forEach(section => {
+            section.style.display = 'none';
+          });
+  
+          targetSection.style.display = 'block';
+  
+          // Ajoutez le code pour faire défiler jusqu'à la section cible
+          window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth'
+          });
+        });
+      });
+    });
+  </script>
+  
+</body>
+</html>
